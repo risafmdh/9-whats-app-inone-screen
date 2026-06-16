@@ -1,0 +1,27 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.riasf.whatsapp9panelviewer
+productName: WhatsApp 9 Panel Viewer
+files:
+  - filter:
+      - main.js
+      - toolbar.html
+      - lock.html
+      - config.json
+      - package.json
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: WhatsApp 9 Panel Viewer
+electronVersion: 42.4.0
